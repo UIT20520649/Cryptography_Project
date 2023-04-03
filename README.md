@@ -76,6 +76,6 @@ Kết hợp {Pi, i = 1, 2,…, n} thành hình ảnh kích thước MxN, ta thu 
 |------|---------------|----------------------|
 | Tìm đề tài | x | x |
 | Trình bày | x | x |
-| Viết báo cáo |  |  |
-| Làm power point| | |
+| Viết báo cáo |  | x |
+| Làm power point| | x |
 | Demo | |  |
