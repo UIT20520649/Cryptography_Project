@@ -50,7 +50,7 @@ Bước 1: Khởi tạo _**IV**_. Mỗi _**IV**_ khác nhau ứng với một k�
 	
 Sau đó, chuyển \[x_1\] – s thành giá trị nguyên theo (2), ký hiệu X_i, i = 1, 2, 3,…, 16. Giá trị của _**IV**_ = _[X1X2…X16]_.
 
-	\[x_1\] = floor(10^4 x_i) mod 256 (2)
+	\[x_1\] = floor($10^4$ $x_i$) mod 256 (2)
 	
 	Với floor(x) trả về giá trị nguyên lớn nhất nhỏ hơn x.
 	
