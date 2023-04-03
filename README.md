@@ -48,9 +48,9 @@ Bước 1: Khởi tạo _**IV**_. Mỗi _**IV**_ khác nhau ứng với một k�
 
 	F(x) = {2x với 0 < x < 0.5; 2(1 – x) với 0.5 < x < 1} (1)
 	
-Sau đó, chuyển x_i – s thành giá trị nguyên theo (2), ký hiệu X_i, i = 1, 2, 3,…, 16. Giá trị của _**IV**_ = _[X1X2…X16]_.
+Sau đó, chuyển \[x_1\] – s thành giá trị nguyên theo (2), ký hiệu X_i, i = 1, 2, 3,…, 16. Giá trị của _**IV**_ = _[X1X2…X16]_.
 
-	X_i = floor(10^4 x_i) mod 256 (2)
+	\[x_1\] = floor(10^4 x_i) mod 256 (2)
 	
 	Với floor(x) trả về giá trị nguyên lớn nhất nhỏ hơn x.
 	
