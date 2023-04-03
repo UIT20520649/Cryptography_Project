@@ -45,19 +45,31 @@ Cho hình ảnh ban đầu (plain image) _**P**_ là hình ảnh hệ 8 bit có 
 
 Các bước của quá trình mã hóa:
 Bước 1: Khởi tạo _**IV**_. Mỗi _**IV**_ khác nhau ứng với một kết quả plain image khác nhau. Tạo một giá trị x_0 bằng phương pháp pseudo-random (hàm _rand()_ trong MATLAB). Giá trị này là giá trị khởi tạo của tent map (1). Lập lại (1) 16 lần lấy được 16 state, ký hiệu x_i, với i 1, 2,..., 16.
+
 	F(x) = {2x với 0 < x < 0.5; 2(1 – x) với 0.5 < x < 1} (1)
+	
 Sau đó, chuyển x_i – s thành giá trị nguyên theo (2), ký hiệu X_i, i = 1, 2, 3,…, 16. Giá trị của _**IV**_ = _[X1X2…X16]_.
+
 	X_i = floor(10^4 x_i) mod 256 (2)
+	
 	Với floor(x) trả về giá trị nguyên lớn nhất nhỏ hơn x.
+	
 Bước 2: Với block \[_**P**_1_\], dùng (3) để mã hóa.
+
 	\[_**C**_1_\] = AES_e(_**K**_, _**IV**_ XOR \[_**P**_1_\]) (3)
+	
 Bước 3: Với các block \[_**P**_i_\] còn lại, dùng (4) để mã hóa.
+
 	\[_**C**_i_\] = AES_e(_**K**_, \[_**C**_i - 1_\] XOR \[_**P**_i_\]), i = 2,…,_n_
 
 Các bước của quá trình giải mã:
 Bước 1: Lấy _**IV**_ và hình ảnh sau mã hóa _**C**_ thông qua các kênh công khai.
 Bước 2: Với  block \[_**C**_1_\], dùng (5) để giải mã.
+
 	\[_**P**_1_\] = AES_d(_**K**_, \[_**C**_1_\]) XOR _**IV**_ (5)
+	
 Bước 3: Với các block Ci còn lại, dùng (6) để mã hóa.
+
 	\[_**P**_i_\] = AES_d(_**K**_, \[_**C**_i_\]) XOR \[_**P**_i - 1_\], i = 2,…,_n_
+	
 Kết hợp {\[_**P**_i_\], i = 1, 2,…,_n_} thành hình ảnh kích thước _MxN_, ta thu được hình ảnh.
