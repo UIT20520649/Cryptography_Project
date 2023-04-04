@@ -3,7 +3,7 @@ A Fast Image Encryption Scheme Based on AES
 ## 1. Topic overview
 
 ### Abstract
-Ngày nay thì việc đăng ký bản quyền và sở hữu trí tuệ rất quan trọng. Đặc biệt là việc bảo vệ các dữ liệu liên quan đến thiết kế dạng hình ảnh, như các bản vẽ thiết kế thời trang, thiết kế logo, bản vẽ xây dựng...Bởi vì việc đăng ký bản quyền cần thời gian xác minh và được lưu ở nhiều nơi nên có thể bị rò rỉ, đánh cắp hoặc sửa đổi. Nên mục tiêu của đồ án này hướng đến việc mã hóa các dữ liệu dạng hình ảnh thông qua mã hóa bất đối xứng AES. 
+Ngày nay thì việc đăng ký bản quyền và sở hữu trí tuệ rất quan trọng. Đặc biệt là việc bảo vệ các dữ liệu liên quan đến thiết kế dạng hình ảnh, như các bản vẽ thiết kế thời trang, thiết kế logo, bản vẽ xây dựng...Bởi vì việc đăng ký bản quyền cần thời gian xác minh và được lưu ở nhiều nơi nên có thể bị rò rỉ, đánh cắp hoặc sửa đổi. Nên mục tiêu của đồ án này hướng đến việc mã hóa các dữ liệu dạng hình ảnh thông qua mã hóa đối xứng AES. 
 
 ### Scenario
 |||
@@ -76,6 +76,6 @@ Kết hợp {Pi, i = 1, 2,…, n} thành hình ảnh kích thước MxN, ta thu 
 |------|---------------|----------------------|
 | Tìm đề tài | x | x |
 | Trình bày | x | x |
-| Viết báo cáo |  | x |
-| Làm power point| | x |
-| Demo | |  |
+| Viết báo cáo | x | x |
+| Làm power point| x | x |
+| Demo |  |  |
