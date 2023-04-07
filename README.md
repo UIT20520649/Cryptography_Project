@@ -3,7 +3,8 @@ A Fast Image Encryption Scheme Based on AES
 ## 1. Topic overview
 
 ### Abstract
-Ngày nay thì việc đăng ký bản quyền và sở hữu trí tuệ rất quan trọng. Đặc biệt là việc bảo vệ các dữ liệu liên quan đến thiết kế dạng hình ảnh, như các bản vẽ thiết kế thời trang, thiết kế logo, bản vẽ xây dựng...Bởi vì việc đăng ký bản quyền cần thời gian xác minh và được lưu ở nhiều nơi nên có thể bị rò rỉ, đánh cắp hoặc sửa đổi. Nên mục tiêu của đồ án này hướng đến việc mã hóa các dữ liệu dạng hình ảnh thông qua mã hóa đối xứng AES. 
+Ngày nay thì việc đăng ký bản quyền và sở hữu trí tuệ rất quan trọng. Đặc biệt là việc bảo vệ các dữ liệu liên quan đến thiết kế dạng hình ảnh, như các bản vẽ thiết kế thời trang, thiết kế logo, bản vẽ xây dựng...Bởi vì việc đăng ký bản quyền cần thời gian xác minh, khi xác minh thì hình ảnh đó được gửi qua nhiều bên và được lưu ở nhiều nơi nên có thể bị rò rỉ, đánh cắp hoặc sửa đổi. Nên mục tiêu của đồ án này hướng đến việc mã hóa các dữ liệu dạng hình ảnh thông qua mã hóa AES. Trong nội bộ cơ quan kiểm định và cấp bằng sở hữu trí tuệ
+Ngày nay thì việc đăng ký bản quyền và sở hữu trí tuệ rất quan trọng, đặc biệt là các dữ liệu liên quan đến thiết kế dạng hình ảnh, như các bản vẽ thiết kế thời trang, thiết kế logo, bao bì, bản vẽ xây dụng, bản vẽ kỹ thuật ... Khi một đơn xin đăng ký bản quyền được tiếp nhận tại cơ quan kiểm định và cấp bằng sở hữu trí tuệ, cần có thời gian xác minh, kiểm định và sửa đổi. Các tài liệu này sẽ được gửi đến nhiều nơi khác nhau. Vì vậy có khả năng cao bị rò rỉ, đánh cắp và sửa đổi. Để ngăn chặn các cuộc tấn công như vậy, kỹ thuật AES sử dụng khóa 256 bit được sử dụng để cung cấp bảo mật cho hình ảnh kỹ thuật số
 
 ### Scenario
 |||
@@ -14,8 +15,7 @@ Ngày nay thì việc đăng ký bản quyền và sở hữu trí tuệ rất q
 |Suject| Description |
 |------|-----|
 | Tài sản cần bảo vệ | Dữ liệu dạng hình ảnh về các thiết kế |
-| Các bên liên quan | Người đăng ký bản quyền và sở hữu trí tuệ
-||Tổ chức tiếp nhận và thẩm định đơn xin đăng ký bản quyền (ví dụ Cục sở hữu trí tuệ Việt Nam)
+| Các bên liên quan | Tổ chức tiếp nhận và thẩm định đơn xin đăng ký bản quyền (ví dụ Cục sở hữu trí tuệ Việt Nam)|
 ||Bên tấn công - đánh cấp dữ liệu
 | Security Goals | Bảo đảm tính bí mật, toàn vẹn, sẵn sàng của bản thiết kế |
 
