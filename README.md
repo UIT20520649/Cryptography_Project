@@ -16,6 +16,7 @@ Ngày nay thì việc đăng ký bản quyền và sở hữu trí tuệ rất q
 | Tài sản cần bảo vệ | Dữ liệu dạng hình ảnh về các thiết kế |
 | Các bên liên quan | Người đăng ký bản quyền và sở hữu trí tuệ
 ||Tổ chức tiếp nhận và thẩm định đơn xin đăng ký bản quyền (ví dụ Cục sở hữu trí tuệ Việt Nam)
+||Bên tấn công - đánh cấp dữ liệu
 | Security Goals | Bảo đảm tính bí mật, toàn vẹn, sẵn sàng của bản thiết kế |
 
 ## 2. Solution
