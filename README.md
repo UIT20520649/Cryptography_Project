@@ -71,7 +71,7 @@ Kết hợp {Pi, i = 1, 2,…, n} thành hình ảnh kích thước MxN, ta thu 
 | Python | Programming Language |
 | Microsoft SQL| Database|
 | Git | Control Project |
-| Flash | Python Framework |
+| Flask | Python Framework |
 
 | Task | Trần Đinh Huy | Huỳnh Lê Phương Nghi |
 |------|---------------|----------------------|
