@@ -7,10 +7,13 @@ Ngày nay thì việc đăng ký bản quyền và sở hữu trí tuệ rất q
 Ngày nay thì việc đăng ký bản quyền và sở hữu trí tuệ rất quan trọng, đặc biệt là các dữ liệu liên quan đến thiết kế dạng hình ảnh, như các bản vẽ thiết kế thời trang, thiết kế logo, bao bì, bản vẽ xây dụng, bản vẽ kỹ thuật ... Khi một đơn xin đăng ký bản quyền được tiếp nhận tại cơ quan kiểm định và cấp bằng sở hữu trí tuệ, cần có thời gian xác minh, kiểm định và sửa đổi. Các tài liệu này sẽ được gửi đến nhiều nơi khác nhau. Vì vậy có khả năng cao bị rò rỉ, đánh cắp và sửa đổi. Để ngăn chặn các cuộc tấn công như vậy, kỹ thuật AES sử dụng khóa 256 bit được sử dụng để cung cấp bảo mật cho hình ảnh kỹ thuật số
 
 ### Scenario
-|||
-|--|--|
-||<img  src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t1.15752-9/273052665_4955273054550537_3257602169887012519_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=64eoREtZ-qwAX8b0RHC&_nc_ht=scontent.fsgn19-1.fna&oh=03_AdQXj3FSelVQyppEPhl2QdXwX4zc3JNWR6x8Sa5RzhgpiA&oe=6455FD5E">|
+<img  src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t1.15752-9/273052665_4955273054550537_3257602169887012519_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=64eoREtZ-qwAX8b0RHC&_nc_ht=scontent.fsgn19-1.fna&oh=03_AdQXj3FSelVQyppEPhl2QdXwX4zc3JNWR6x8Sa5RzhgpiA&oe=6455FD5E">
 
+<img src= "https://scontent.xx.fbcdn.net/v/t1.15752-9/339253955_702893334966767_6350457726693590808_n.png?stp=dst-png_s417x417&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=zhZMnnq67T8AX_tKXUE&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQZWbK2uCmQFyum2YLiBX5M7lvjH3HRk3oQp23OPgwdLw&oe=64572F8A">
+
+Nguy cơ
+- Con người
+- Nội gián
 
 |Suject| Description |
 |------|-----|
@@ -20,7 +23,11 @@ Ngày nay thì việc đăng ký bản quyền và sở hữu trí tuệ rất q
 | Security Goals | Bảo đảm tính bí mật, toàn vẹn, sẵn sàng của bản thiết kế |
 
 ## 2. Solution
-<img src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t1.15752-9/337910498_1731539320616596_2727062013634325420_n.png?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=D3f01Y8dQTIAX9836kK&_nc_oc=AQlQhL9cfX_lC6pct6p8uOgvltskLUc4XHwPn_cQfBkkvsVuJg4rVTkvnPxWUvBcn4M&_nc_ht=scontent.fsgn19-1.fna&oh=03_AdQth76AVP2HMfJnSFdgEh43VlHagWMXLZDXsdWnBFqTYQ&oe=64522623">
+ <img src= "https://scontent.fsgn7-1.fna.fbcdn.net/v/t1.15752-9/338791441_1591396884698819_5028458497922858237_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=pdio1WLqgM0AX_YAudX&_nc_ht=scontent.fsgn7-1.fna&oh=03_AdT_NF_zsVGYN0nkTF26H-Lzr-1pAepOBtZNvICSAVzZ9Q&oe=64570AC9">
+ 
+ 
+ <img src="https://scontent.fsgn7-1.fna.fbcdn.net/v/t1.15752-9/338527868_909508380382925_4664036545290249084_n.png?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=KDhPcrZxTPUAX8dH27r&_nc_oc=AQkxrFu_-mInWsf4GojvWvAyVrykhe6fsJOB89kSzpZMGlQ3k8OIVDMV1NwcNYZ3UvhHRDyE5nRgFMpPy8_EULgu&_nc_ht=scontent.fsgn7-1.fna&oh=03_AdSD-FLk3bUds0lCZJ4uu9zi1w3dYB_55nOFe2g_qQYVkQ&oe=64570E2E">
+
 
 ## 3. Implementation Plan
 Trong quá trình mã hóa hình ảnh AES, hình ảnh được chia thành các khối 128 bit, mỗi khối được mã hóa bằng cách sử dụng một khóa đối xứng. Khóa này được tạo ra bằng cách sử dụng một thuật toán tạo khóa, chẳng hạn như PBKDF2 hoặc scrypt. Khóa đối xứng được sử dụng để thay đổi các bit trong các khối hình ảnh, làm cho chúng trở nên khó đọc được.
@@ -71,7 +78,7 @@ Kết hợp {Pi, i = 1, 2,…, n} thành hình ảnh kích thước MxN, ta thu 
 | Python | Programming Language |
 | Microsoft SQL| Database|
 | Git | Control Project |
-| Flask | Python Framework |
+| Flash | Python Framework |
 
 | Task | Trần Đinh Huy | Huỳnh Lê Phương Nghi |
 |------|---------------|----------------------|
